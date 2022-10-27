@@ -10,25 +10,35 @@ let sceltaUtente = prompt("scegli pari o dispari")
 
 let InserisciNumero = parseInt(prompt("Inseirisci una numero"));
 
+let pari;
+
+let dispari;
 
 function random(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
-  }
-
-
- let som = InserisciNumero + (random(1,5)); 
-console.log(som);
-
-
-if (som % 2  == 0 ){
-    console.log("pari");
-
-}else {
-    console.log("dispari");
 }
 
 
 
+let som = InserisciNumero + random(1, 5); 
+console.log(som);
+
+
+
+if (som % 2 == 0) {
+    pari = "pari";
+
+} else {
+    dispari = "dispari";
+}
+
+
+if (sceltaUtente == pari) {
+    console.log("hai vinto");
+
+} else {
+    console.log("hai perso");
+}
 
 
 
