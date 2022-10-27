@@ -18,11 +18,10 @@ function random(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-
-
-let som = InserisciNumero + random(1, 5); 
+let numeroRandom = random(1, 5)
+console.log(numeroRandom);
+let som = InserisciNumero + numeroRandom;
 console.log(som);
-
 
 
 if (som % 2 == 0) {
