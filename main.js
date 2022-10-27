@@ -21,7 +21,7 @@
 
 //     let richiestaNumeri = parseInt(prompt("Inseirisci Numero"));
 //     som = som + richiestaNumeri
-    
+
 
 //     if (som <= 50) {
 //         numeri.push(richiestaNumeri)
@@ -34,3 +34,25 @@
 // i++    
 // }
 
+let parola = prompt("Inseirisci una parola");
+
+let inverso = "";
+
+for (let i = parola.length - 1; i >= 0; i--) {
+
+    inverso += parola[i];
+}
+
+if (parola === inverso) {
+    console.log("ok e palindroma");
+} else {
+    console.log("non è palindroma");
+}
+
+
+function reverso(inverso) {
+
+    return
+}
+
+reverso(inverso);
