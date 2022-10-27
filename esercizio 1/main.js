@@ -5,25 +5,23 @@
 
 let parola = prompt("Inseirisci una parola");
 
-let inverso = "";
+
+function palindroma() {
+    let inverso = "";
 
 for (let i = parola.length - 1; i >= 0; i--) {
 
     inverso += parola[i];
 }
 
-if (parola === inverso) {
+    return inverso;
+}
+
+if (parola === palindroma()) {
     console.log("ok e palindroma");
 } else {
     console.log("non è palindroma");
 }
 
-
-function reverso(inverso) {
-
-    return
-}
-
-reverso(inverso);
 
 

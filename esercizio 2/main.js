@@ -6,6 +6,8 @@
 // // Stabiliamo se la somma dei due numeri è pari o dispari
 //  (usando una funzione)
 // // Dichiariamo chi ha vinto.
+
+
 let sceltaUtente = prompt("scegli pari o dispari")
 
 let InserisciNumero = parseInt(prompt("Inseirisci una numero"));
@@ -14,30 +16,36 @@ let pari;
 
 let dispari;
 
-function random(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
+function Random() {
+    return Math.floor(Math.random() * 5) + 1;
 }
 
-let numeroRandom = random(1, 5)
+let numeroRandom = Random()
 console.log(numeroRandom);
 let som = InserisciNumero + numeroRandom;
 console.log(som);
 
 
-if (som % 2 == 0) {
-    pari = "pari";
 
-} else {
-    dispari = "dispari";
+function scelta(x, y) {
+
+
+    if (x % 2 == 0) {
+        pari = "pari";
+
+    } else {
+        dispari = "dispari";
+    }
+
+
+    if (y == pari) {
+        console.log("hai vinto");
+
+    } else {
+        console.log("hai perso");
+    }
+
 }
 
-
-if (sceltaUtente == pari) {
-    console.log("hai vinto");
-
-} else {
-    console.log("hai perso");
-}
-
-
+scelta(som, sceltaUtente)
 
