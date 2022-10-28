@@ -37,12 +37,19 @@ function scelta(x, y) {
         dispari = "dispari";
     }
 
-
+    let controllo = ""
+    
     if (y == pari) {
-        console.log("hai vinto");
+
+        controllo = "hai vinto"
+        console.log(controllo);
+        return controllo
 
     } else {
-        console.log("hai perso");
+        controllo = "hai perso"
+        console.log(controllo);
+        return controllo
+        
     }
 
 }
